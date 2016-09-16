@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cats,Cats,Cars!</title>
+
+    <style>
+        #container {
+            height: 1000px;
+            border: double;
+            position: relative;
+        }
+        
+        #cat1,
+        #cat2,
+        #cat3,
+        #cat4 {
+            width: 250px;
+            height: 250px;
+            background-image: url(/img/Cute%20caterfly.jpg);
+            background-size: cover
+        }
+        
+        #cat2 {
+            position: absolute;
+            right: 12px;
+            top: 12px;
+        }
+        
+        #cat3 {
+            position: absolute;
+            right: 12px;
+            bottom: 12px;
+        }
+        
+        #cat4 {
+            position: absolute;
+            left: 12px;
+            bottom: 12px;
+        }
+        
+        #Car1 {
+            background-image: url(/img/Car.png);
+            width: 600px;
+            height: 300px;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="cat1"></div>
+        <div id="cat2"></div>
+        <div id="cat3"></div>
+        <div id="cat4"></div>
+        <div id="Car1"></div>
+    </div>
+</body>
+
+</html>
