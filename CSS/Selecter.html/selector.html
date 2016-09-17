@@ -10,13 +10,12 @@ color:red;
         #cat{
             
         color: orange;
-            
-
+        
             
         }
        
-        .cat{
-color: yellow
+        h1.cat{
+color: yellow !important;
         
         }
         h1 div{
@@ -26,14 +25,29 @@ color: deepskyblue;
             
            color: limegreen;
         }
+        li:first-child{
+            
+            font-size:  4em;
+        } 
+        li:last-child {
+            
+            font-size: 1em
+                
+        }
+        li:nth-child(2) {
+            
+            font-size: 3em;
+            
+        }
     </style>
 </head>
 <body>
     <h1>Rainbow</h1>
     <h1 id="cat">Rainbow</h1>
     <h1 class="cat">Rainbow</h1>
+    <h1 id="cat" class="cat">Rainbow</h1>
     <h1>
-        <div>Rainbow
+        <div>Rainbow 
         <br>
         <br>
         <div>Rainbow
@@ -41,6 +55,11 @@ color: deepskyblue;
         </div>
     </h1>
 
-    
+    <ul>
+        <li>Basketball</li>
+        <li>Hiking</li>
+        <li>Soccer</li>
+    </ul>
 </body>
+
 </html>
