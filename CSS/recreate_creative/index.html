@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Recreate :) </title>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: sans-serif;
+        }
+        
+        header {
+            background-image: url(img/header.jpg);
+            color: white;
+            background-size: cover;
+        }
+        
+        #navbar {
+            height: 40px;
+            color: white;
+            padding: 10px;
+        }
+        
+        #logo {
+            font-weight: 600;
+            color: rgba(255, 255, 255, 0.8);
+        }
+        
+        ul {
+            list-style: none;
+        }
+        
+        ul li a {
+            color: rgba(255, 255, 255, 0.8);
+            ;
+            text-decoration: none;
+            font-size: 0.8em;
+        }
+        
+        ul {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        
+        ul li {
+            display: inline-block;
+            padding-left: 10px;
+        }
+        /* banner*/
+        
+        #banner {
+            height: 500px;
+            text-align: center;
+            padding: 80px;
+        }
+        
+        #banner .title {
+            font-size: 40px;
+            text-transform: uppercase;
+            font-weight: 600;
+            width: 89%;
+            margin: 0 auto;
+        }
+        
+        hr {
+            width: 40px;
+            margin: 20px auto;
+            border-color: orange;
+        }
+        
+        .subtitle {
+            font-size: 13px;
+            color: rgba(255, 255, 255, 0.8);
+            width: 80%;
+            margin: 0 auto;
+        }
+        
+        .btn {
+            text-decoration: none;
+            background-color: orangered;
+            display: inline-block;
+            height: 35px;
+            width: 131px;
+            color: white;
+            border-radius: 17px;
+            line-height: 35px;
+            margin-top: 40px;
+            text-transform: uppercase;
+            font-size: 12px;
+        }
+        
+        #services {
+            padding: 80px;
+        }
+        
+        #services .title {
+            font-size: 2em;
+            text-align: center;
+            text-transform: capitalize;
+        }
+        
+        .item {
+            display: inline-block;
+            width: 24%;
+            padding: 10px;
+            text-align: center;
+        }
+        @media screen and (min-width: 1100px) {
+            .item {
+                padding: 40px;
+                border:solid;
+            }
+        
+        }
+        .fa {
+            font-size: 40px;
+            color: tomato;
+        }
+        
+        .service_name {
+            margin: 10px;
+            font-size: 1.2em;
+        }
+        
+        .services_desc {
+            font-size: 0.8
+        }
+        
+        #pics img {
+           float: left;
+            width: 33.33%;}
+            
+        #downloadnow {
+           background-color: black;
+            height: 200px;
+          clear: both;
+            color: white;
+            text-align: center; 
+            font-size: 30px;
+            padding: 50px;
+        }
+        
+        #downloadnow .btn {
+            background-color: white;
+            color: black;
+            margin-top: 20px;      
+        }
+        
+        </style>
+</head>
+
+<body>
+    <header>
+        <div id="navbar">
+
+            <div id="logo">
+                START SHOPPING
+            </div>
+            <ul>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">SERVICES</a></li>
+                <li><a href="#">SHOP</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </div>
+        <div id="banner">
+            <div class="title">Your greatest items that you've ever got</div>
+            <hr>
+            <div class="subtitle">
+                These great items and deals will improve your lifestyle and get the best customer services!
+            </div>
+            <a class="btn" href="#">Start  Shopping</a>
+
+        </div>
+
+
+    </header>
+    <div id="intro">
+        <div class="title">abc</div>
+        <hr> .subtitle
+        
+    </div>
+    <div id="services">
+        <div class="title">
+            At your service
+        </div>
+        <hr>
+        <div class="item">
+            <i class="fa fa-diamond"></i>
+            <div class="service_name">
+                Sturdy Items 
+
+            </div>
+            <div class="services_desc">Our items always are made with care and child friendly protection</div>
+        </div>
+
+
+
+
+        <div class="item">
+            <i class="fa fa-laptop"></i>
+            <div class="service_name">
+                Free Wifi 
+
+            </div>
+            <div class="services_desc">We give wifi that never slows down! You can do anything you want with the wifi!</div>
+        </div>
+        <div class="item">
+            <i class="fa fa-heart"></i>
+            <div class="service_name">
+Kind Workers
+
+            </div>
+            <div class="services_desc">Our workers will be very kind and nice so you won't need to worry</div>
+        </div>
+        <div class="item">
+            <i class="fa fa-bus"></i>
+            <div class="service_name">
+                Free Delivery 
+
+            </div>
+            <div class="services_desc">We give free delievery when you buy over 100$ items</div>
+        </div>
+
+    </div>
+    <div id="download">
+        <div id="pics">
+            <img src="./img/portfolio/1.jpg" alt="">
+            <img src="./img/portfolio/2.jpg" alt="">
+            <img src="./img/portfolio/3.jpg" alt="">
+            <img src="./img/portfolio/4.jpg" alt="">
+            <img src="./img/portfolio/5.jpg" alt="">
+            <img src="./img/portfolio/6.jpg" alt="">
+        </div>
+        
+        <div id="downloadnow">
+            <div class="title">Free Test Products Today!</div>
+             <button class="btn">Shop Now</button>
+            
+        </div>
+    </div>
+</body>
+
+</html>
