@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Puppies</title>
+    <style>
+        #stage {
+            perspective: 1200px;
+
+            padding-top: 100px;
+            padding-left: 200px;
+        }
+        
+        #spin {
+            transform-style: preserve-3d;
+            transform-origin: 180px 0;
+                        
+        }
+        
+        #spin img {
+            position: absolute;
+            width: 200px;
+            height: 160px;
+            box-shadow: inset 0 0 20px grey;
+        }
+        
+        #one {
+            transform: rotateY(0deg) translateX(180px);
+            padding-left: 160px;
+        }
+        
+        #two {
+            transform: rotateY(-72deg) translateX(180px);
+            padding-left: 160px;
+        }
+        
+        #three {
+            transform: rotateY(-144deg) translateX(180px);
+            padding-left: 160px;
+        }
+        
+        #four {
+            transform: rotateY(-216deg) translateX(180px);
+            padding-left: 160px;
+        }
+        
+        #five {
+            transform: rotateY(-288deg) translateX(180px);
+            padding-left: 160px;
+        }
+        
+        @keyframes spin {
+            from {
+                transform: rotateY(0deg);
+            }
+            to {
+                transform: rotateY(-360deg);
+            }
+        }
+        
+        #spin {
+            animation-name: spin;
+            animation-duration: 6s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+        
+        #spin:hover {
+            animation-play-state: paused;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="stage">
+        <div id="spin">
+            <img id='one' src="../img/Australian_Catle_Dog_Silverbarn's_Paavo.jpg" alt="">
+            <img id="two" src="../img/Best%20Friends.jpg" alt="">
+            <img id="three" src="../img/Candy%20CCC.jpg" alt="">
+            <img id="four" src="../img/Cuddle%20CCC.jpg" alt="">
+            <img id="five" src="../img/Cute%20caterfly.jpg" alt="">
+        </div>
+    </div>
+
+</body>
+
+</html>

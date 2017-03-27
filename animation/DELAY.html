@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cool Art ;)</title>
+    
+    <style>
+        #container {
+            height: 400px;
+            border: solid;
+        }
+        .first, .second {
+            position: absolute;
+            left: -200px;
+            
+                transition: left 1s ease;
+            
+                
+        }
+        
+        .second {
+            transition-delay: 1s;
+            
+            
+        }
+        
+        #container:hover .first {
+            left:20px;
+        }
+        #container:hover .second {
+            left:200px;
+        }
+    
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="first"> 1. ME OF COURSE </div>
+        <div class="second">2. MY FAMILY SOMETIMES</div>
+    </div>
+</body>
+</html>

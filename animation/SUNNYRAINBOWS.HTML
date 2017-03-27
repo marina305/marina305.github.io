@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sunny Rainbows </title>
+ 
+    
+    <style>
+     
+        #container {
+            text-align: center;
+            height: 300px;
+                width: 290px;
+            border-radius: 1200px;
+            border: solid;
+            border-color: turquoise;
+            background-color:hotpink;
+            position: absolute;
+             left: 0px;
+            bottom: 0px;
+                        
+        }   
+        
+        @keyframes rainbow {
+            from {
+                left: 0;
+                background-color:black;
+            }
+            33% {
+                bottom: 0;
+                left:300px;
+                background-color:red;
+            }
+            66% {
+                left:300px;
+                bottom: 300px;
+                background-color:darkblue;
+            }
+            
+            
+            90% {
+                bottom: 300px;
+                background-color:yellow;
+                left: 0px;
+                
+            }
+        
+                
+            
+            to {
+            left: 0px;
+background-color: lime;
+            }
+        }
+        #container {
+            animation-name: rainbow;
+            animation-duration: 2s;
+        }
+    </style>
+</head>
+<body>
+       
+    <h1>MY NAME IS JOE AND I LIKE PINK</h1>  
+      <h1>THIS WAS JOES PIE THAT HE SAID HAD HIS FAVORITE COLOUR ON IT! IT MUST BE PINK IT MUST IT MUST! </h1> 
+       
+       <div id="container">
+           Marina
+       </div>
+</body>
+</html>

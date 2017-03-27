@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Art Ninja </title>
+    <style>
+        .transform {
+            border-left-width: 100px;
+            height: 40px;
+            width: 200px;
+            background-color: red;
+            position: absolute;
+            right: 200px;
+            bottom: 200px;
+            transition-property: all;
+            transition-timing-function: linear;
+            transition: all 1s linear;
+            transition-duration: 1s;
+        }
+        
+        .transform:hover{
+            /*
+            transform: scale(2, 1);
+            transform: rotate(180deg);
+            transform: skewX(30deg);
+            transform: skewY(30deg);
+transform: translateX(600px);
+transform: translateY(600px);
+*/
+            transform: rotate(15deg) translateX(200px) scale(1.5, 3) skew(200deg, 200deg) translateX(200px) translateY(100px) ;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="transform"><h1>Ninja</h1></div>
+
+</body>
+
+</html>

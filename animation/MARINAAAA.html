@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+    <style>
+        #container:hover {
+            width: 400px;
+            height: 250px;
+            border: solid;
+            perspective: 100px;
+        }
+        
+        #card:hover {
+            transform: rotateY(180deg);
+            transition-duration: 5s;
+            transform-style: preserve-3d;
+            
+        }
+        
+        .face {
+            width: 400px;
+            height: 250px;
+            background-color: turquoise;
+            opacity: 1.0;
+            font-size: 6em;
+            position: absolute;
+        }
+        
+        .front {
+            background-color: turquoise;
+        }
+        
+        .back {
+            transform: rotateY(180deg);
+            background-color:hotpink;
+            backface-visibility: hidden;
+        }
+        
+        img {
+            width: 400px;
+            height: 250px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="card">
+            <div class="face front"> <img src="../img/Birthdaycard.jpg" alt=""> </div>
+            <div class="face back"><img src="../img/BirthdayBackCard.jpg" alt=""></div>
+        </div>
+    </div>
+</body>
+
+</html>
