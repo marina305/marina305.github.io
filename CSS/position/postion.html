@@ -10,22 +10,30 @@
             width: 60%;
             height: 200px;
             background-color:plum;
-            
-            margin: 0 auto;
             position: relative;
         }
         
+        #original {
+            width: 100px;
+            height: 100px;
+            background-color: skyblue;
+        }
         #inner1 {
             
             height: 100px;
-/*            position: relative;*/
+            position: relative;
 /*            position: absolute;*/
-              position: fixed;
-            right: 50px;
+/*              position: fixed;*/
 /*            top: 50px;*/
-            bottom: 100px;
+            right:20px;
             background-color:brown;
-            width: 200px;
+            width: 100px;
+            background-color: aquamarine;
+        }
+        inner2 {
+            background-color: black;
+            border:solid;    
+            
         }
     </style>
     
@@ -35,13 +43,19 @@
 <body>
    
    
-   
+<h2>relative means relative to its original position. </h2>
+<div id="original">
+    
+</div>
 <div id="container">
     <div id="inner1"></div>
-    <div id="inner2"></div>
-    <div id="inner3"></div>
 </div>
-     
+<hr>
+<h1>Hello, This is relative ^ and this is absolute '</h1>
+<hr>
+<div id="container">
+    <div id="inner2"></div>
+</div>
    
     
 </body>

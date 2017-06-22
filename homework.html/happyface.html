@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Happy Town Happy Me!</title>
+    <style>
+        
+        body {
+       background: linear-gradient(blue,red, yellow, green);
+            
+        }
+        
+        #face {
+            
+            background-color: yellow;
+            height: 455px;
+            width: 455px;
+            border-radius: 50%;
+            
+        }
+        
+        .eye {
+            background-color: white;
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            position: relative;
+             left: 100px;
+        }
+        
+        #lip {
+            width: 200px;
+            height: 100px;
+            border-bottom: solid 10px;
+            border-radius: 56.7%;
+            border-left: none;
+            border-right: none;
+        }
+        .corner {
+            width: 20px;
+            height: 35px;
+            background-color: black;
+            border-radius: 6px;
+        }
+        #leftcorner {
+            transform: rotate(10deg)
+        }
+    </style>
+</head>
+<body>
+    <div id="face">
+      <div id="eyes">
+          <div id="right" class=eye>
+              <div class="pupil"></div>
+          </div>
+          <div id="left" class=eye>
+             <div class="pupil"></div> 
+          </div>
+      </div>  
+        <div id="mouth">
+            <div id="lip">
+                <div id="leftcorner" class="corner"></div>
+                <div id="rightcorner"class="corner"></div>
+            </div>
+            
+        </div>
+        
+    </div>
+    
+</body>
+</html>

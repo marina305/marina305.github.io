@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Battery</title>
+    <style></style>
+    <style>
+    
+        html,body {
+            height: 100%;
+        }
+        #container {
+            background-color: black;
+            height: 100%;
+            padding-top: 100px;
+        }
+    
+        
+        #tip {
+            
+          background-color:red;
+        height: 5px;
+        width: 15px;
+        margin: auto;
+        
+            animation: tipchange 7s infinite alternate;
+       
+        }
+        
+        #battery {
+/*            background-color: red;*/
+            height: 300px;
+            margin: auto;
+            width: 100px;
+            box-shadow: 0 0 10px red inset;
+            border-radius: 10px;
+        
+            line-height: 300px;
+            
+            overflow: hidden;
+            
+
+        }
+        
+        #value {
+/*            border: solid red;*/
+        display:inline-block;
+            width: 100px;
+            height: 2px;
+            background-color:lime;
+            vertical-align: bottom;
+            
+         animation: valuechange 7s linear infinite alternate;
+        }
+        
+        @keyframes valuechange {
+            100% {
+                height: 300px;
+                
+            }
+        }
+        
+        @keyframes tipchange {
+            100% {
+                background-color: silver;
+                
+            }
+        }
+                @keyframes  {
+            100% {
+                height: 300px;
+                
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="tip"></div>
+        <div id="battery">
+            <div id="value"></div>
+        </div>
+    </div>
+</body>
+</html>
