@@ -1,25 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>More Of My Poem </title>
-</head>
-<body>
-    <script>
-    document.body.style.backgroundColor="red";
-    </script>
-    <h1>October leaves are lovely</h1>
-    <h1>They rustle when I run</h1>
-    <h1>Sometimes I make a heap</h1>
-    <h1>And jump in them for fun.</h1>
-    <br>
-    <h1>Autumn leaves float quietly down</h1>
-    <h1>And form a carpet on the ground.
-    </h1>
-    <h1>But when those leaves are stepped upon,</h1>
-    <h1> Listen for the crackling sound.</h1>
-    <img src="img/fallleaf.jpg">
+    <title> My Poem  </title>
 
-    <a href="ending.html"> THE END </a>
+    <style>
+        body {
+            border: solid black
+        }
+        
+        .poem {
+            float: right;
+        }
+        
+       
+        
+        footer {
+            clear: both;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            font-size: 40px;
+            opacity: 0.6;
+            
+        }
+        
+        div {
+            border: solid red;
+        }
+        
+        .page {
+            border: double blue 10px;
+            overflow: hidden;
+            height: 100vh;
+        }
+        
+        #page1 {
+            background: url(img/leaves.gif);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        #page1 .poem {
+            background: linear-gradient(to left, red, orange);
+            width: 500px;
+        }
+        
+        #page2 {
+           
+            background: url(img/giphy.gif);
+            background-size: cover;
+            background-repeat:no-repeat;
+            
+        }
+        
+        #page2 .poem {
+            
+            background: linear-gradient(to left, red, yellow);
+            
+        }
+        
+        footer video {
+            opacity: 1;
+            width: 100px;
+        }
+        
+        #page0 {
+            font-size: 50px;
+            background: linear-gradient(to right bottom, red, yellow)
+        }
+        
+        
+    </style>
+</head>
+
+<body>
+    <div id="page0" class="page">
+        <center>
+            <h1> OCTOBER</h1></center>
+        <center>
+            <h3> Coded by: Marina W.</h3></center>
+        <center>
+            <h3> Author Unknown</h3></center>
+    </div>
+
+
+    <div id="page1" class='page'>
+        <div class="poem">
+            <h1>October's the month</h1>
+            <h1>When the smallest breeze</h1>
+            <h1>Gives us a shower</h1>
+            <h1>Of autumn leaves.</h1>
+            <br>
+            <h1>Bonfires and pumpkins,</h1>
+            <h1>Leaves sailing down- </h1>
+            <h1>October is red</h1>
+            <h1>And golden and brown.</h1>
+        </div>
+        
+    
+
+
+
+    
+
+    </div>
+
+    <div id="page2" class='page'>
+        <div class="poem">
+            <h1>October leaves are lovely</h1>
+            <h1>They rustle when I run</h1>
+            <h1>Sometimes I make a heap</h1>
+            <h1>And jump in them for fun.</h1>
+            <br>
+            <h1>Autumn leaves float quietly down</h1>
+            <h1>And form a carpet on the ground.</h1>
+            <h1>But when those leaves are stepped upon,</h1>
+            <h1> Listen for the crackling sound.</h1>
+            <br>
+        </div>
+
+        
+
+    </div>
+
+    <footer>
+         <a href="#page0"> Title Page, </a>
+       
+        <a href="#page1"> Page 1, </a>
+
+        <a href="#page2"> Page 2 </a>
+        
+
+        
+        
+        
+        <br>
+        <audio src="audio/bach/bach_minuet%20(1).mp3" controls autoplay loop></audio>
+    </footer>
 </body>
+
 </html>
