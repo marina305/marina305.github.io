@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title> My Poem  </title>
+    <title> My Poem </title>
 
     <style>
         body {
@@ -14,8 +14,6 @@
             float: right;
         }
         
-       
-        
         footer {
             clear: both;
             position: fixed;
@@ -23,7 +21,6 @@
             bottom: 0;
             font-size: 40px;
             opacity: 0.6;
-            
         }
         
         div {
@@ -46,23 +43,17 @@
             background: linear-gradient(to left, red, orange);
             width: 500px;
             font-style: italic;
-           
-            
         }
         
         #page2 {
-           
             background: url(img/giphy.gif);
             background-size: cover;
-            background-repeat:no-repeat;
-            
+            background-repeat: no-repeat;
         }
         
         #page2 .poem {
-            
             background: linear-gradient(to left, red, yellow);
             font-style: oblique;
-            
         }
         
         footer video {
@@ -75,15 +66,49 @@
             background: linear-gradient(to right bottom, red, yellow)
         }
         
-        
         #page3 {
-            
-        
             background: linear-gradient(to left, red, orange);
+        }
+        
+/*        page3 */
+       #container:hover {
+            width: 400px;
+            height: 250px;
+            border: solid;
+            perspective: 100px;
+        }
+        
+        #card:hover {
+            transform: rotateY(180deg);
+            transition-duration: 5s;
+            transform-style: preserve-3d;
             
         }
         
+        .face {
+            width: 400px;
+            height: 250px;
+            background-color: turquoise;
+            opacity: 1.0;
+            font-size: 6em;
+            position: absolute;
+        }
         
+        .front {
+            background-color: turquoise;
+        }
+        
+        .back {
+            transform: rotateY(180deg);
+            background-color:hotpink;
+            backface-visibility: hidden;
+        }
+        
+        #page3 img {
+            width: 400px;
+            height: 250px;
+        } 
+       
     </style>
 </head>
 
@@ -109,13 +134,18 @@
             <h1>Leaves sailing down- </h1>
             <h1>October is red</h1>
             <h1>And golden and brown.</h1>
-            
-        </div>
-        
-    
 
- 
-    
+        </div>
+    </div>
+
+    <div id="page3" class="page">
+
+      <div id="container">
+        <div id="card">
+            <div class="face front"> <img src="../img/Birthdaycard.jpg" alt=""> </div>
+            <div class="face back"><img src="../img/BirthdayBackCard.jpg" alt=""></div>
+        </div>
+    </div>
 
     </div>
 
@@ -133,24 +163,26 @@
             <br>
         </div>
 
-        
- 
+
+
     </div>
 
     <footer>
-         <a href="#page0"> Title, </a>
-       
+        <a href="#page0"> Title, </a>
+
         <a href="#page1"> Page 1, </a>
 
         <a href="#page2"> Page 2 </a>
-        
-    
 
-        
-        
-        
+        <a href="#page3"> Page 3</a>
+
+
+
+
+
+
         <br>
-   <audio controls loop src="audio/bach/bach_minuet%20(1).mp3"></audio>
+        <audio controls loop src="audio/bach/bach_minuet%20(1).mp3"></audio>
     </footer>
 </body>
 
